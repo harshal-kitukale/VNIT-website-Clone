@@ -1,0 +1,41 @@
+.carousel-item figcaption {
+  /* border: 1px solid violet; */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: yellow;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.carousel-item {
+  position: relative;
+  height: 450px; /* Set your desired height */
+}
+
+.blurred-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Customize arrow button styles */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  background-color: rgba(22, 22, 22, 0.432);
+}
+

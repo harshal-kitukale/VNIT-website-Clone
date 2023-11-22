@@ -1,0 +1,63 @@
+.upcoming-events .upcoming-events-top-div > h1,
+.latest-news .latest-news-top-div > h1 {
+  color: #ff6800;
+  font-size: 30px;
+  padding: 20px;
+}
+.upcoming-events,
+.latest-news {
+  font-family: "poppins", sans-serif;
+  width: 100%;
+  background-color: #f4f4f4;
+}
+.upcoming-events .upcoming-events-top-div,
+.latest-news-top-div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dddddd;
+}
+.upcoming-events .upcoming-events-top-div > p,
+.latest-news-top-div > p {
+  margin: 5px 10px;
+  padding: 5px;
+}
+.upcoming-events .upcoming-events-top-div > p:first-child,
+.latest-news-top-div > p:first-child {
+  font-size: 18px;
+}
+.upcoming-events .upcoming-events-top-div > p:last-child,
+.latest-news-top-div > p:last-child {
+  font-size: 16px;
+}
+
+.upcoming-events > div > section > h2,
+.upcoming-events-top-div > p,
+.upcoming-events span,
+.latest-news > div > div > section > h2,
+.latest-news-top-div > p,
+.latest-news span {
+  color: #108896;
+}
+.upcoming-events > div > section > h2,
+.latest-news > div > div > section > h2 {
+  font-weight: 600;
+  font-size: 20px;
+}
+.upcoming-events > div > section,
+.latest-news > div > div > section {
+  margin: 0px 30px 35px 20px;
+  /* margin-bottom: 35px; */
+}
+.upcoming-events > div > section > p,
+.latest-news > div > div > section > p {
+  font-size: 15px;
+}
+.upcoming-events p:hover,
+.upcoming-events h2:hover,
+.upcoming-events span:hover,
+.latest-news p:hover,
+.latest-news h2:hover,
+.latest-news span:hover {
+  color: #002954;
+  cursor: pointer;
+}

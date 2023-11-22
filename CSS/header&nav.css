@@ -1,0 +1,98 @@
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  background-color: #1b374c;
+  /* border: 1px solid red; */
+  height: 160px;
+}
+.vnit-logo img {
+  margin: 15px;
+}
+.select-lang {
+  margin: 25px 15px;
+  padding: 5px 5px;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  border: 2px solid grey;
+}
+
+/*#navbar */
+
+#navbar {
+  background-color: #e05050;
+  height: 80px;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+
+.nav-u1 {
+  margin: 0;
+}
+
+.nav-u1,
+.nav-u2 {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2px 20px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.nav-u2 {
+  width: 45%;
+  margin: -10px 100px 20px auto;
+}
+#navbar span {
+  display: inline-block;
+  transform: rotate(90deg);
+  font-size: 8px;
+  margin-left: 2px;
+}
+
+#navbar ul li {
+  /* display: inline-block; */
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.dropdown-content {
+  /* display: none; */
+  border-radius: 5px;
+  width: max-content;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background-color:#e05050;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -5px 15px;
+  z-index: 1;
+  cursor: pointer;
+  padding: 20px 10px 20px 0px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: .8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.dropdown-content li{
+    width:100%;
+    transition: background-color 0.5s ease, color 0.5 ease;
+}
+.dropdown-content li:hover{
+    background-color: white;
+    color: black;
+}
+#navbar ul li:hover .dropdown-content {
+  /* display: block; */
+  /* max-height: 200px;  */
+  opacity: 1;
+  visibility: visible;
+}
